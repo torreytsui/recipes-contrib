@@ -1,0 +1,12 @@
+doctrine_phpcr:
+    odm:
+        auto_mapping: true
+        mappings:
+            # With default symfony application setup, map "App\Document\" namespace to "src/Document" directory
+            App:
+                mapping: true
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.root_dir%/Document'
+                prefix: App\Document\
+                alias: App
